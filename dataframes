@@ -1,0 +1,15 @@
+# CREATE  TRAINEE DATA SET#
+
+df=pd.DataFrame() # create empty dataframe
+
+df[ 'a' ]=['y','y','y','y','y','y','y','n','n','n','n','n']
+df[ 'b' ]=['L1','L1','G1','G1','L1','L1','L1','G1','L1','G1','L1','L1']
+df[ 'c' ]=['y','y','y','y','y','y','n','n','y','y','y','y']
+df[ 'T' ]=['Me' ,'Me','Me','Me','Me','Me','No Me','No Me','Me','No Me','No 'Me']
+
+X_train = pd.get_dummies(df[['a','b','c']]     #convert trainee data to dummy variables
+y_train = df [ 'T' ]
+
+# View the first five lines of the loaded data                         
+          
+  df.head()         
